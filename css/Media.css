@@ -1,0 +1,477 @@
+/* ================================================
+   MEDIA.CSS — Мобильная адаптация для Satis
+   Подключить ПОСЛЕ Style.css:
+   <link rel="stylesheet" href="Media.css" />
+   ================================================ */
+
+
+/* ================================================
+   ОБЩИЕ СТИЛИ ДЛЯ ВСЕХ СТРАНИЦ
+   ================================================ */
+
+@media (max-width: 768px) {
+    /* ── ХЕДЕР ── */
+    .header-top {
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        margin-top: 14px;
+        padding: 0 16px 14px;
+    }
+    .logo-one {
+        margin-left: 0;
+        width: 36px;
+        height: 36px;
+    }
+    .img-one {
+        width: 200px;
+        height: auto;
+    }
+    .h1 {
+        width: 180px;
+        height: 44px;
+        font-size: 15px;
+        margin-right: 0;
+    }
+    /* ── ГЛАВНАЯ — hero секция ── */
+    .header-main {
+        flex-direction: column;
+        padding: 32px 20px 40px;
+        min-height: auto;
+        gap: 24px;
+        text-align: center;
+    }
+    .header-main-left {
+        writing-mode: horizontal-tb;
+        transform: none;
+        flex-direction: row;
+        margin-left: 0;
+        padding-left: 0;
+        gap: 8px;
+        justify-content: center;
+    }
+    .header-main-left img {
+        width: 20px;
+        transform: none;
+    }
+    .headrer-main-center {
+        max-width: 100%;
+        align-items: center;
+    }
+    .h-m-c-h1 {
+        width: 100%;
+        font-size: 28px;
+        text-align: center;
+    }
+    .h-m-p {
+        width: 100%;
+        font-size: 15px;
+        text-align: center;
+    }
+    .h-m-h3 {
+        width: 200px;
+        height: 48px;
+        font-size: 16px;
+        margin-top: 24px;
+        align-self: center;
+    }
+    .header-main-right {
+        width: 100%;
+        height: 320px;
+        position: relative;
+    }
+    .babuli-three,
+    .babuli-two,
+    .h-m-r-card {
+        width: 100%;
+        height: 300px;
+        right: 0;
+        top: 0;
+    }
+    /* ── SECTION ONE — карточки ── */
+    .section-one {
+        height: auto;
+        padding: 20px 0;
+    }
+    .container {
+        flex-direction: column;
+        margin-left: 16px;
+        margin-right: 16px;
+        gap: 16px;
+    }
+    .s-one-card {
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+        flex-direction: column;
+        padding: 20px;
+        gap: 16px;
+    }
+    .s-one-texts-h1 {
+        font-size: 22px;
+        padding-left: 0;
+        padding-top: 0;
+    }
+    .s-one-texts-p {
+        font-size: 14px;
+        padding-left: 0;
+    }
+    .s-one-texts-h3 {
+        margin-left: 0;
+        font-size: 15px;
+    }
+    .s-one-img {
+        width: 100px;
+        height: 100px;
+    }
+    /* ── SECTION TWO — карусель статей ── */
+    .section-two {
+        padding: 36px 0 32px;
+    }
+    .s-two-container {
+        padding: 0 16px;
+    }
+    .s-two-title {
+        font-size: 26px;
+        margin-bottom: 28px;
+    }
+    .s-two-card {
+        flex-direction: column;
+        height: auto;
+    }
+    .s-two-card-img {
+        width: 100%;
+        height: 180px;
+    }
+    .s-two-card-text {
+        padding: 16px;
+    }
+    /* ── SECTION THREE ── */
+    .section-three {
+        width: 100%;
+        height: auto;
+        padding: 40px 0 60px;
+    }
+    .s-three-h3 {
+        font-size: 24px;
+        padding-top: 40px;
+    }
+    .s-three-container {
+        margin: 32px 16px 60px;
+        flex-direction: column;
+    }
+    .s-three-p {
+        width: 100%;
+        height: auto;
+        font-size: 15px;
+    }
+    .s-three-left-h3 {
+        width: 180px;
+        height: 48px;
+        font-size: 16px;
+        margin-top: 24px;
+    }
+    .feather {
+        top: 0;
+        display: none;
+    }
+    /* ── SECTION FOUR — мероприятия карусель ── */
+    .section-four {
+        padding: 36px 0 32px;
+    }
+    .s-four-container {
+        padding: 0 16px;
+    }
+    .s-four-title {
+        font-size: 26px;
+        margin-bottom: 24px;
+    }
+    /* ── FOOTER ── */
+    .footer {
+        padding-top: 48px;
+    }
+    .footer-inner {
+        padding: 0 20px 32px;
+    }
+    .footer-nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .footer-dot {
+        display: none;
+    }
+    .footer-contacts {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 14px;
+    }
+    .footer-contact-item {
+        min-width: 0;
+        font-size: 13px;
+    }
+    .footer-bottom {
+        flex-direction: column;
+        align-items: center;
+        gap: 14px;
+        text-align: center;
+    }
+    .footer-rights,
+    .footer-copy {
+        font-size: 12px;
+    }
+    /* ── МЕНЮ (choose.html) ── */
+    .blurs {
+        flex-direction: column;
+    }
+    .menu-overlay {
+        width: 100%;
+        min-height: auto;
+        padding: 20px 24px 32px;
+    }
+    .blur img {
+        width: 100%;
+        height: 260px;
+        object-fit: cover;
+    }
+    .menu-nav ul li a {
+        font-size: 18px;
+    }
+    .menu-nav ul li {
+        padding: 14px 0;
+    }
+    .menu-contacts {
+        margin-top: 28px;
+    }
+}
+
+
+/* ================================================
+   МАЛЕНЬКИЙ ТЕЛЕФОН (до 480px)
+   ================================================ */
+
+@media (max-width: 480px) {
+    /* Хедер */
+    .h-m-c-h1 {
+        font-size: 22px;
+    }
+    .h-m-p {
+        font-size: 13px;
+    }
+    .h-m-h3 {
+        width: 100%;
+    }
+    /* Hero на внутренних страницах */
+    .s-hero-title,
+    .e-hero-title,
+    .is-hero-title,
+    .os-hero-title,
+    .contact-hero-title,
+    .diate-hero-title {
+        font-size: 24px;
+        letter-spacing: 1px;
+    }
+    /* Гриды — в одну колонку */
+    .s-grid,
+    .e-grid,
+    .is-grid {
+        grid-template-columns: 1fr;
+    }
+    /* Контейнеры внутренних страниц */
+    .s-container,
+    .e-container,
+    .is-container,
+    .os-container,
+    .contact-container,
+    .diate-container {
+        padding: 0 12px 40px;
+        margin-top: -32px;
+    }
+    /* Форма контактов */
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+    .contact-form-card,
+    .contact-info-card {
+        padding: 20px 16px;
+    }
+    .contact-form-row {
+        grid-template-columns: 1fr;
+    }
+    .contact-submit {
+        width: 100%;
+        justify-content: center;
+    }
+    /* O Satis страница */
+    .os-info-card {
+        flex-direction: column;
+        padding: 24px 16px;
+        gap: 20px;
+    }
+    .os-info-img-wrap {
+        width: 140px;
+        margin: 0 auto;
+    }
+    .os-info-h2 {
+        font-size: 18px;
+    }
+    .os-buttons {
+        flex-direction: column;
+        gap: 12px;
+    }
+    .os-btn {
+        width: 100%;
+        justify-content: center;
+    }
+    /* Таблица */
+    .os-table-wrap {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+    .os-table {
+        min-width: 480px;
+    }
+    /* Диета */
+    .diate-info-card,
+    .diate-card {
+        padding: 20px 16px;
+    }
+    /* Пагинация */
+    .s-pagination,
+    .e-pagination,
+    .is-pagination {
+        gap: 4px;
+    }
+    .s-page-btn,
+    .e-page-btn,
+    .is-page-btn {
+        width: 30px;
+        height: 30px;
+        font-size: 12px;
+    }
+    /* Футер */
+    .footer-nav a {
+        font-size: 14px;
+    }
+    .footer-logo img {
+        height: 36px;
+    }
+    /* Section two карточки */
+    .s-two-card-h3 {
+        font-size: 14px;
+    }
+    .s-two-card-p {
+        font-size: 12px;
+    }
+    /* Хедер верхний */
+    .header-top {
+        padding: 10px 12px;
+        gap: 8px;
+    }
+    .img-one {
+        width: 160px;
+    }
+    .h1 {
+        width: 160px;
+        height: 38px;
+        font-size: 13px;
+    }
+}
+
+
+/* ================================================
+   ПЛАНШЕТ (481px – 768px) — двухколоночные гриды
+   ================================================ */
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .s-grid,
+    .e-grid,
+    .is-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+    .os-info-card {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    .os-info-img-wrap {
+        width: 160px;
+        flex-shrink: 0;
+    }
+    .contact-form-row {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* ================================================
+   СРЕДНИЙ ПЛАНШЕТ (769px – 1024px)
+   ================================================ */
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .logo-one {
+        margin-left: 40px;
+    }
+    .h1 {
+        margin-right: 40px;
+    }
+    .header-main {
+        padding: 40px 32px;
+        gap: 24px;
+    }
+    .h-m-c-h1 {
+        width: 100%;
+        font-size: 38px;
+    }
+    .h-m-p {
+        width: 100%;
+        font-size: 17px;
+    }
+    .header-main-right {
+        width: 380px;
+        height: 400px;
+    }
+    .babuli-three,
+    .babuli-two,
+    .h-m-r-card {
+        width: 340px;
+        height: 380px;
+    }
+    .s-grid,
+    .e-grid,
+    .is-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+    .s-two-container,
+    .s-four-container {
+        padding: 0 32px;
+    }
+    .container {
+        margin-left: 32px;
+        margin-right: 32px;
+    }
+    .footer-inner {
+        padding: 0 40px 32px;
+    }
+    .s-three-p {
+        width: 100%;
+        font-size: 17px;
+    }
+    .section-three {
+        width: 100%;
+        height: auto;
+        padding-bottom: 60px;
+    }
+    .s-three-h3 {
+        font-size: 30px;
+    }
+    .s-three-container {
+        margin: 40px 32px 80px;
+    }
+}
